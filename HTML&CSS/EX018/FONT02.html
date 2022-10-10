@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>External Fonts</title>
+<style>
+@font-face{
+font-family:'Cursive standard';
+src:url('FONTS/Cursive standard Bold.ttf') format('truetype');
+font-style: normal;
+font-weight: normal;
+}
+@font-face{
+font-family:'Schoolwork';
+src:url('Schoolwork-Regular.ttf') format('truetype');
+font-style: normal;
+font-weight: normal;
+
+}
+/*types of format()
+- opentype (otf)
+-truetype (ttf)
+-embedded-opentype
+-truetype-aat(apple advanced Typography)
+-svg
+site:dafont
+*/
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+font-size: 3em;
+font-family:'Cursive standard', Times, serif;
+}
+h2{
+font-size: 2em;
+font-family: 'Schoolwork',Arial, Helvetica, sans-serif;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Title</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestiae commodi saepe incidunt ea dicta et, expedita beatae deleniti laudantium rerum aperiam debitis adipisci sint accusantium quisquam, assumenda quibusdam inventore!</p>
+<h2>Subtitle</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis incidunt maiores ullam ea enim quod placeat numquam quam veritatis mollitia culpa consectetur quasi reprehenderit ut eius, qui dolores asperiores!</p>
+</body>
+</html>

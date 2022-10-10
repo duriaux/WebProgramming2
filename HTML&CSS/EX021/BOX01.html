@@ -1,0 +1,60 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boxs Model</title>
+<style>
+                                       
+h1{/*box-level // h1=> display:block(default)*/
+display: inline;
+/*being inline makes it impossible to define height and width*/
+background-color: lightgray;
+height: 300px;
+width: 300px;
+
+border: 10px solid darkslategray;
+padding: 10px;
+margin: 10px auto 10px auto;
+outline-width:7px;
+outline-style: dotted;
+outline-color: blue;
+
+}
+a{/*inline-level 
+
+
+
+// display: inline(default): */
+display: block;
+
+/*display: inline-block : allows define some resources as height, width.*/
+border-width: 10px;
+border-style: groove;
+border-color: darkred;
+padding-top:10px;
+padding-right: 10px;
+padding-bottom:10px;
+padding-left: 10px;
+margin-top:10px;
+margin-right:10px;
+margin-bottom:10px;
+margin-left:10px;
+outline: 4px groove blue;                                                            
+
+}
+</style>
+</head>
+<body>
+<h1>Example of Box-level1 Box</h1>
+<p>paragraphs are also examples of box-level,
+but the<a href="">
+links are examples
+of inline-level box
+</a>.
+let's see how all this works.
+</p>
+
+</body>
+</html>

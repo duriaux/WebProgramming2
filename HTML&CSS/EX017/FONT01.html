@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fonts in CSS</title>
+<style>
+body{
+
+font-family:'work Sans', Arial, Helvetica, sans-serif;
+font-size: 1em;
+
+
+}
+/*absolute measures:
+cm, mm, in, px, pt(point), pc(picas)
+
+
+relative measures:
+em(measure relative to the size of the font being used;relative to 'm'uppercase),ex(relative to height 'x' of the font),
+rem(type 'em'only relative to root: font that is in bary: ,main font),vw(view port in %),vh(view port in %) and %.
+W3C recommendations: em & px
+1in = 2,54cm
+16px = 1em(default), normally.
+1em = 1rem
+*/
+h1{
+
+   font: italic bolder 3em "work Sans",Sans-serif;                     
+/*font-style: italic;
+font-weight: bolder;
+font-size:3em;
+font-family:"work Sans",Sans-serif;
+
+below: shorthand(limited)*/
+font:italic bolder 3em 'work Sans',Sans-serif;
+
+}
+h2{
+font-style: oblique;
+font-weight: bolder;
+font-size: 2em;
+font-family: "work Sans",Sans-serif;
+
+}
+</style>
+</head>
+<body>
+
+<h1>Working with Fonts</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aspernatur accusantium esse enim! Optio, rem. Necessitatibus aliquam molestias reprehenderit dolorem tenetur eum consequuntur, facilis iste. Nobis illum vitae labore sit?</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione reprehenderit quam! Debitis veritatis esse beatae ipsum facere adipisci placeat aliquam nesciunt, aperiam totam quas molestias aut hic mollitia neque.</p>
+
+
+<h2>Exercise Subtitle</h2>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, nihil vitae. Quis inventore sequi exercitationem earum? Qui optio temporibus in vero dolorem soluta eaque tempora eligendi obcaecati laborum. Saepe, fugiat.</p>
+
+
+</body>
+</html>
