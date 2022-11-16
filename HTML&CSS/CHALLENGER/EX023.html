@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tables</title>
+
+<style>
+
+body{
+
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+table{
+
+width: 400px;
+height:400px;
+border-collapse: collapse;
+
+}
+
+tr.third{
+
+background-color: gray;
+
+
+}
+
+td{
+
+border: 1px solid black;
+padding: 3px;
+/*horizontal alignment*/
+text-align:center;
+/*vertical alignment*/
+vertical-align:middle;
+
+
+
+}
+td.data{
+
+background-color: yellow;
+
+}
+.number{
+
+text-align: right;
+
+}
+
+</style>
+
+</head>
+<body>
+  <h1>My First Table</h1>  
+  <!--
+
+    TABLE HIERARCHY(simples)
+    
+    TABLE ROW = table line
+    TABLE HEADER = table header
+    TABLE DATA = table data
+  --> 
+
+
+
+  
+  <table>
+    <tr> <!--First line-->
+      <td>A1</td>
+      <td>B1</td>
+      <td>C1</td>
+    </tr>
+    
+    
+    <tr> <!--Second line-->
+    <td>A2</td>
+    <td>B2</td>
+    <td class="number">C2</td>
+    </tr>
+    
+    <tr> <!--third line-->
+    <td >A3</td>
+    <td>B3</td>
+    <td class="number">C3</td>
+    </tr>
+    
+  
+
+  </table>
+
+</body>
+</html>
