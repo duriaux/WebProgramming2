@@ -18,10 +18,20 @@ table{
 
 width: 500px;
 border-collapse: collapse;
+position:relative;
 
 
 }
+caption{
 
+font-size: 1.5em;
+font-weight: bold;
+background-color: lightgray;
+padding: 6px;
+
+
+
+}
 
 thead{
 
@@ -31,15 +41,53 @@ color: white;
 
 }
 
+thead > tr > th{
+
+position: sticky;
+top:-1px;
+background-color: gray;
+
+
+
+}
+
+
 td, th{
 
 border: 1px solid black;
 padding:10px;
 
+}/*tbody > tr: nth-child(odd)
+tbody > tr: nth-child(2n-1)
+  tbody > tr: nth-child(even)
+  tbody > tr: nth-child(2n)
+  tbody > tr: nth-child(*/
+
+/*tbody > tr:nth-child(2n) {
+
+background-color: lightgray;
+
+}*/
+
+tbody > tr:nth-child(odd){
+
+background-color:rgb(227, 174, 174);
+font-weight: bold;
+
 }
+
+tbody > tr:nth-child(even){
+
+background-color: yellow;
+text-decoration:underline;
+
+}
+
+
+
 td.num{
 
-  text-align:right;
+  text-align: right;
 }
 
 tfoot{
@@ -59,7 +107,7 @@ color: white;
   <!--
 ANATOMY TO LARGES TABLES:
     TABLE
-
+          CAPTION
           THEAD
                
                  TR, TD, TH
@@ -74,12 +122,14 @@ ANATOMY TO LARGES TABLES:
 -->
 <table>
 
+  <caption>Population of Federative Units</caption>
+  
 <thead>
 
 <tr>
 
-<th>State</th>
-<th>Population</th>
+<th scope="col">State</th>
+<th scope="col"style="width:50px;">Population</th>
 
 </tr>
 
@@ -282,13 +332,12 @@ ANATOMY TO LARGES TABLES:
 
 
 
-<th>Total in Habitants</th>
+<th scope="row">Total in Habitants</th>
 <td class="num"><strong>213.317.639</strong></td>
 
 
 
 </tfoot>
-
 
 
 </table>

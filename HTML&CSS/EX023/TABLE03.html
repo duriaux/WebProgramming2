@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+
+ <style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+table{
+border-collapse: collapse;
+width:500px;
+margin:auto;
+position: relative;
+}
+
+caption{
+background-color: blueviolet;
+padding: 4px;
+font-weight: bolder;
+font-size: 1.3em;
+font-size: 88px;
+
+}
+
+
+thead{
+text-align: center;
+background-color:rgb(19, 45, 7);
+border: 2px groove black;
+color: white;
+padding:4px;
+font-weight: bolder;
+font-size: 88px;
+}
+thead > tr > th{
+position:sticky;
+background-color:rgb(19, 45, 7);
+top:-1px;
+
+
+}
+
+td,th{
+border:2px groove black;
+text-align:center;
+font-size: 88px;
+
+}
+tr > td:nth-child(2n-1){
+
+  background-color: yellow;
+
+}
+tr > td:nth-child(2n){
+
+background-color: blue;
+
+
+}
+
+
+
+ </style> 
+</head>
+<body>
+ 
+
+<table>
+<caption> Retail Table</caption>
+<thread>
+  <tr>
+    <th>Puzzle Table</th>
+    <th>Crazy Table</th>
+    <th>Random Table</th>
+  </tr>
+</thread>
+
+<tr>
+    <td>A</td>
+    <td colspan="2">B</td>
+    
+  </tr>
+  <tr>
+    <td rowspan="3">D</td>
+    <td>E</td>
+    <td rowspan="2">F</td>
+  </tr>
+  <tr>
+   
+    <td>H</td>
+    
+  </tr>
+  <tr>
+    
+    
+    <td colspan="2">M</td>
+  </tr>
+
+<tr>
+  <td>N</td>
+  <td>O</td>
+  <td>P</td>
+</tr>
+<tr>
+  <td>Q</td>
+  <td>R</td>
+  <td>S</td>
+</tr>
+<tr>
+  <td colspan="3">W</td>
+  
+</tr>
+
+
+
+</table>
+
+
+</body>
+</html>
