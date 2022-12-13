@@ -4,51 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Tables</title>
-  <style>
+  <title>Site of Test</title>
 
+<style>
 body{
+
 font-family: Arial, Helvetica, sans-serif;
+background-color: lightgray;
+color: white;
 }
 
 table{
-width:700px;
 border-collapse: collapse;
-border: 3px solid black;
 
 }
-div#container{
-  /*width:80%;*/
-overflow-x:scroll;
-
+#container{
+overflow-x:auto;
 }
+
 caption{
-  
-  
-  font-weight:bolder;
-  font-size: 1.6em;
-  padding:20px;
-  
+font-size: 1.2em;
+font-weight: bolder;
+padding: 20px;
 }
-th, td{
-border: 3px solid black;
-padding:10px;
-font-size:1em;
-
+th,td{
+  border: 2px solid black;
+  padding: 10px;
 }
 tr:nth-child(even){
-background-color: antiquewhite;
+background-color: gray;
 
 }
 
+</style>
 
-  </style>
 </head>
 <body>
-  <h1>Tables in Small screens</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt deserunt quos dolorum provident vero reiciendis! Quasi exercitationem molestiae vero minus ut laudantium soluta aliquid nam! Quia nobis cupiditate cum unde.</p>
+  
   <div id="container">
-    <table>
+  <table>
       <caption>Product Sales per Month</caption>
       <thead>
         <tr>
@@ -175,6 +169,9 @@ background-color: antiquewhite;
           </tr>
         </tbody>
     </table>
-  </div>
+</div>
+
+
+
 </body>
 </html>
