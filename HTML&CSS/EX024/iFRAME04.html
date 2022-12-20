@@ -13,15 +13,25 @@
 <!--SANDBOX: IT BLOCKS ANY AND ALL ACCESS THROUGH WEBSITES THAT ARE INSIDE THE iFRAME; IT PROTECTS AGAINST ATTACKS.
 
 TO MAKE THE WEBSITE THAT IS INSIDE THE IFRAME A BIT MORE LIMITED TO CALL:
-referrerpolicy=no-referrer 
+referrerpolicy=no-referrer.
 
-SO THE  WEBSITE THAT IS INSIDE IFRAME WILL NOT COLLECT ANY DATA
+INSTEAD OF: no-referrer-when-dowgrade, no-referrer
+
+SO THE WEBSITE THAT IS INSIDE IFRAME WILL NOT COLLECT ANY DATA
+
+sandbox="sandbox" (maximum security)referrerpolicy="no-referrer":will bring maximum security to the site created that has iframe.
+
+for the form to work:
+sandbox="allow-same-origin"
+
+FOR THIS SAME iFRAME I AM ALLOWING THINGS FROM THE SAME ORIGIN, USE OF FORM, USE OF WRITINGS.
+
+ALL OTHER SETTINGS ARE WITHIN MAXIMUM SECURITY
 -->
-
 <iframe 
 
-src="EXTRAPAGES/PAGE06.html"sandbox="sandbox"
-referrerpolicy="no-referrer-when-downgrade" scolling="auto"width="400"height="500">
+src="EXTRAPAGES/PAGE06.html"sandbox="allow-same-origin allow-forms allow-scripts"referrerpolicy="no-referrer-when-dow"
+ scolling="auto"width="400"height="200">
 
 <p>Your browser is not compatible with that...</p>
 

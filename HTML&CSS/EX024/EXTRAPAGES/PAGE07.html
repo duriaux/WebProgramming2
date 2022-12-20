@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <style>
+    body{
+      background-color: rgb(158, 237, 237);
+      color:write;
+    }
+  </style>
+</head>
+<body>
+  <!--href="#": empty link-->
+  <a href="#"onclick="clicked()">Click me</a>
+  <div id="exit"></div>
+  <script>
+
+function clicked(){
+let s;
+s=window.document.getElementById("exit");
+s.innerHTML = s.innerHTML + '<h1>you clicked!</h1>'
+}
+
+/*window.document.getElementById("exit").innerHTML= window.document.getElementById("exit").innerHTML+'<p>You clicked!</p>' */
+
+
+
+  </script>
+</body>
+</html>
