@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form > p{
+margin:5px;
+padding: 5px;
+
+}
+ </style>
+</head>
+<body>
+  
+
+  <!--every form must be inside form tag-->
+  <!--autocomplete = off => turn off input tag suggestion board.
+
+    form data normally are sent for some programming language: java server, PHP, etc.
+
+    action= ... => this element fires when
+    clicking on submit button.
+
+input tag must have:
+    name=... => object name;
+    id=... => object identifier.
+
+    Name: & lastName: encompass it across label tag(ctrl shift + p).
+
+    for=... => this element receives the 'id'.
+
+
+i can not create a form without relating the label tag to the input tag. Once made relationship to the click on label the input tag is selected.
+
+
+method="GET"  =>data are sent for URL;
+i must use GET to the following data:
+name, lastName, age, nationality, gender...
+
+method GET share, for example: 
+https://br.search.yahoo.com/search?fr=mcafee&type=E210BR91199G91640&p=virus+and+bacterium
+
+method GET: only for sending up to 3000bytes(approximately 3000 letters).
+
+method GET does not respond for sending of photo
+method="POST" =>data are not sent for URL, however the POST does not protect totally.
+full protection it is possible though cryptography.
+I must use POST to the following data:
+password credit card number, adress, cep, photo, file
+
+
+  
+NOTE: to find data => to enter data => inspection => network => file name => header 
+
+
+NOTE: LEARNING 'HTTPS': DATA FULL PROTECTION
+  -->
+  <h1>My First Form</h1>
+
+  <form action="Register.php" autocomplete="off"method="POST">
+
+<p>
+  <label for="iName">Name:</label>
+
+  <input type="text"name="name"id="iName">
+
+</p>
+
+<p>
+  <label for="iLastName">LastName:</label>
+
+  <input type="text"name="lastName"id="iLastName">
+
+</p>
+
+<input type="submit"value="send">
+
+
+
+  </form>
+
+
+</body>
+</html>

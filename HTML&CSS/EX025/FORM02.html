@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form02</title>
+</head>
+<body>
+  <!--action element pointing for file.
+  
+  for & id elements have the same value.Voilà label tag & input tag are connected.
+
+  password input: encrypt a code.
+  reset input: clear the data.
+
+  once such form presents password it is compulsory to call method=POST.
+
+  required: this element makes filling in the field mandatory.
+  required minlength = x: the field can only have minimum x characters.
+ required maxlength = y: the field can only have maximum y characters. 
+ 
+ size = x => it shows x characters at once.
+
+placeholder = ... => characters background that indicate function of each field.
+
+custom autocomplete: form tag receives autocomplete=on, then input tag recieves autocomplete according to its usefulness
+
+-->
+  <h1>Form Test</h1>
+
+
+  <form action="register.php"method="POST"autocomplete="on">
+  
+  <p>
+  <label for="iUser">User:</label>
+  <input type="text"name="user"id="iUser"required minlength="5"maxlength="15"size="5"placeholder="user name"autocomplete="userName">
+</p>
+
+
+<p>
+  <label for="iPassword">Password:</label>
+  <input type="password"name="password"id="iPassword"size="4"required minlength="6"maxlength="15"placeholder="password"autocomplete="current-password">
+</p>
+FOR
+<p>
+
+<input type="submit"value="send">
+<input type="reset"value="clean">
+
+
+</p>
+
+
+
+</form>
+
+
+
+
+</body>
+</html>
