@@ -10,7 +10,7 @@ min & max element => minimum & maximum values to be applied.
 
 step =>it increases or decreasesa value from a constant value. 
 
-type=number => soi is donly possible type digits.
+type=number => soi is donly possible type digits. ''
 
 autocomplete=name => names will be suggested for inbox
 
@@ -19,50 +19,78 @@ value element => when using 'value' element the placehold won't answer anymore.
 
 </head>
 <body>
- <h1>Form Test: Student Grade</h1>
-<form action="register.js"method="get"autocomplete="on">
 
-  <p>
+  <form action="register.js"method="GET"autocomplete="on">
 
-<label for="iName">Name:</label>
-<input type="text"name="name"id="iName"required maxlength="30"placeholder=" Name"autocomplete="name"size="15">
+<fieldset>
 
-</p>
-
-<p>
-<label for="iAverage">Average:</label>
-<input type="number"name="average"id="iAverage" min="0"max="10"placeholder="0 to 10"value="5.0"step="0.2"required>
-
-</p>
+<legend>First Semester/2023</legend>
 
 <p>
   
-  <label for="iMonth">School Year:</label>
-  <input type="month"name="month"id="iMonth"placeholder="month"value="2023-01"></p>
-
-<p>
-  <label for="iDay">Test Day:</label>
-  
-  <input type="date"name="dia"id="iDay"value="2022-08-15"></p>
-
-
-  <p>
-
-<label for="iHour">Test Schedule:</label>
-
-<input type="time"name="hour"id="iHour"value="17:25">
-
-  </p>
-
-
-  <p>
-
-<input type="submit"value="Send">
-<input type="reset"value="Clean">
+  <label for="iName">Name: </label><input type="text"name="name"id="iName"size="11"placeholder="Student Name"required minilength="5"maxlength="21"autocomplete="name">
 
 </p>
+<br>
 
-</form>
+
+<p>
+
+  <label for="iMonth">Month: </label>
+  <input type="month"name="month"id="iMonth"required value="2023-05">
+
+</p>
+<br>
+
+
+<p>
+
+  <label for="iDay">Test Day: </label><input type="date"name="day"id="iDay"value="2023-05-28"required>
+
+</p>
+<br>
+
+
+<p>
+<label for="iHour">Test Schedule: </label><input type="time"name="hour"id="iHour"require value="10:00">
+
+</p>
+<br>
+
+
+<p>
+
+<label for="IAverage">Semester Average</label>
+<input type="number"name="average"id="iAverage"require min="0"max="10"step="0.2"placeholder="0 to 10">
+
+</p>
+<br>
+
+
+<p>
+  <input type="submit"value="Send">
+  <input type="reset"value="Clean">
+</p>
+
+
+
+
+
+
+
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+  </form>
  
 
 </body>

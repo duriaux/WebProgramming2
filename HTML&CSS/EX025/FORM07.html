@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 07</title>
+</head>
+<body>
+ <form action="register.js"method="POST"autocomplete="on">
+  <fieldset>
+    <legend>Personal Data</legend>
+    
+    <p>
+
+<label for="iNick">NickName: </label>
+<input type="text"name="nick"id="iNick"required 
+minilength="5"maxlenght="11"size="15"placeholder="Nickname">
+
+    </p>
+    <br>
+    
+    <p>
+
+<label for="iEmail">Email: </label>
+<input type="email"name="email"id="iEmail"placeholder="xxxxx@xxxx.xxx"pattern="^[a-z0-9.]+@[a-z0-9]\.[a-z]\.([a-z]+)?$"autocomplete="email">
+
+    </p>
+    <br>
+    
+    <p>
+
+      <label for="iPassword">Password: </label>
+      <input type="password"name="password"id="iPassword"
+      placeholder="password"required minlenght="8"maxlenght="15"size="14"autocomplete="current-password">
+    </p>
+    <br>
+    
+    <p>
+
+      <label for="iTel">Tel: </label>
+      <input type="tel"name="tel"id="iTel"placeholder="Tel: (xx)xxxx or xxxxx-xxxx"pattern="^\(\d{2}\)\d{4,5}-\d{4}$"require >
+ 
+  </fieldset>
+
+</p>
+
+
+
+
+<input type="submit"value="Send">
+<input type="reset"value="Clean">
+
+</p>
+
+ </form>
+
+
+
+
+
+
+
+
+</body>
+</html>

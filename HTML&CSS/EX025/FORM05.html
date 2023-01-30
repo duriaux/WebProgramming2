@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 05</title>
+</head>
+<body>
+
+<!--type = radio => when faced with two options when checking one option, the other
+option will be excluded, enough for that, provide the same value to the element name.
+
+type = checkbox => it allows checking multioptions.
+
+checked => it allows checking automatically.
+
+
+-->
+
+  <h1>Form Example</h1>
+  <form action="register.js"method="get"autocomplete="0n">
+<fieldset>
+
+  <legend>Gender</legend>
+
+<input type="radio"name="gender"id=iMasculine checked value="M">
+<label for="iMasculine">Masculine</label>
+
+<input type="radio"name="gender"id="iFeminine"value="F"><label for="iFeminine">Feminine</label>
+
+</fieldset> 
+
+<fieldset>
+
+<legend> Age Group</legend>
+
+<input type="radio"name= "age"id="iYoung"><label for="iYoung">Young(up to 29)</label>
+
+<input type="radio"name="age"id="IAdult"><label for="iAdult">Adult(30 to 59)checked</label>
+
+<input type="radio"name="age"id="iSenior"checked><label for="iSenior">Senior(59 or plus)</label>
+
+
+</fieldset>
+
+
+
+<fieldset>
+
+<legend>Favorite Sports</legend>
+
+
+
+<input type="checkbox"name="fut"id="iFut"checked><label for="iFut">Football</label>
+<br>
+
+<input type="checkbox"name="basket"id="iBasket"checked><label for="iBasket">Basketball</label>
+<br>
+<input type="checkbox"name="swimming"id=iSwimming><label for="iSwimming">Swimming</label>
+<br>
+<input type="checkbox"name="volley"id="iVolley"><label for="iVolley">VolleyBall</label>
+<br>
+<input type="checkbox"name="cycling"id="iCycling"><label for="iCycling">Cycling</label><br>
+
+<input type="checkbox"name="windsurfing"id=iWindsurfing>
+<label for="iWindsurfing">Windsurfing</label>
+<br>
+l
+      
+      
+    </fieldset>
+<p>
+
+<input type="submit"value="Send">
+<input type="reset"value="Clean">
+
+</p>
+  </form>
+</body>
+</html>
