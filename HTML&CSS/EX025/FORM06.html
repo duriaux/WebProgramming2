@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 01</title>
+</head>
+<body>
+<!--value = #00ff00 , the range(satisfaction level)=> personalize the color chart -->
+
+  <h1>Example of Form</h1>
+  
+  <form action="register.js"method="POST"autocomplete="on">
+  <p>
+<input type="color"name="color"id="iColor"value="#00ff00"><label for="iColor">Color: </label>
+    
+  </p>
+
+<p>
+  <label for="iLevel">Satisfaction Level: </label><input type="range"name="level"id="iLevel"min="0"max="5"value="2">
+    </p>
+    
+  <p>
+
+<label for="iFoto">Profile Picture: </label><input type="file"name="foto"id="iFoto">
+
+
+
+
+  </p>  
+    
+    
+    
+    
+    
+    <p>
+      
+      <input type="submit"value="Send">
+      
+      <input type="reset"value="Clean">
+    
+    </p>
+  </form>
+</body>
+</html>
