@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form 08</title>
+</head>
+<body>
+
+  <!--select(attributes: name, id) element can have two children: optgroup(attribute: label) element, option(attribute: value) element, where option can be a child of optgroup.
+  
+  
+  datalist(attribute: id) element needs the input element(attributes:type, name, id, list), and the id attribute of the datalist will be linked to the list attribute of the input element
+
+
+
+
+  textarea element has the attributes: id, name, cols and rows, all of which can receive values. Textarea can receive content.
+
+
+  
+  -->
+
+  
+  <h1>Form with 'select'Element:</h1>
+  
+  <form action="register.js"method="POST"autocomplete="on">
+
+
+
+
+<fieldset>
+
+<legend>select Element</legend>
+
+<p>
+
+<label for="iMonth">Month:</label>
+
+<select name="month" id="iMonth">
+
+<option value=""selected>--- Pick Up ---</option>
+
+<optgroup label="First Semester">
+
+<option value="jan">January</option>
+<option value="feb">february</option>
+<option value="mar">March</option>
+<option value="apr">April</option>
+<option value="ma">May</option>
+<option value="jun">June</option>
+
+</optgroup>
+
+<optgroup label="Second Semester">
+
+<option value="jul">July</option>
+<option value="aug">August</option>
+<option value="sept">September</option>
+<option value="oct">October</option>
+<option value="nov">November</option>
+<option value="dec">December</option>
+
+</optgroup>
+
+
+
+</select>
+
+</p>
+
+<p>
+
+<label for="iProf">Profession:</label>
+<input type="text" name="prof" id="iProf"list="firstProf">
+
+<datalist id="firstProf">
+  <option value="doc">Doctor</option>
+  <option >Fireman</option>
+  <option value="cop">Cop</option>
+  <option value="traf">Traffic Cop</option>
+</datalist>
+
+</p>
+
+
+
+<p>
+
+<label for="imsg">Message:</label><br>
+
+<textarea name="msg" id="imsg" cols="30" rows="10">
+type your msg:
+
+</textarea>
+
+</p>
+
+
+
+
+<p>
+
+<input type="submit" value="Send">
+<input type="reset" value="clean">
+
+</p>
+
+
+</fieldset>
+
+<input type="submit" value="Send">
+<input type="reset" value="Clean">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Review:</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+
+*{
+
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family: 'Orbitron', sans-serif;
+
+}
+
+  #container{
+  background-color: rgb(228, 19, 19);
+  }
+  
+  form{
+  
+  margin:10px;
+  
+  }
+  
+  p{
+  
+  padding: 10px;
+  font-size:1.5em;
+  
+  
+  }
+  
+  </style>
+  
+  </head>
+  
+  <body>
+
+    <div id="container">
+  
+  <h1>Form Review: Some Elements</h1>
+  
+  <form action="register.js"method="post"autocomplete="on">
+  
+  <fieldset>
+  
+    <legend>Miscellaneous Form</legend>
+  
+  <p>
+    <label for="iuser">User: </label><input type="text" name="user" id="iuser"required minlength="5"maxlength="21"size="21"placeholder="user name"autocomplete="User">
+  
+  </p>
+  
+  <p>
+  
+  <label for="iemail">Email: </label><input type="email" name="email" id="iemail"required pattern="^[\w.]+@[a-z]\.([a-z]+)?$" placeholder="valid email"autocomplete="email">
+  
+  </p>
+  
+  <p>
+
+    <label for="ipassword">Password: </label><input type="password" name="password" id="ipassword"required minlength="7"maxlength="21"size="21"placeholder="password"autocomplete="current-password">
+  
+    </p>
+  
+  <p>
+  
+  <label for="itel">Tel: </label><input type="tel" name="tel" id="itel"required pattern=^\(\d{2}\)[0-9]{4,5}-\d{4}$ placeholder="(aa)aaaa or aaaaa-aaaa"autocomplete="tel">
+  
+  </p>
+  
+  
+  
+  
+  <p>
+
+    <label for="iaverage">Average: </label><input type="number" name="average" id="iaverage"required min="0"max="100"step="1"value="50">
+  
+  </p>
+  
+  
+  <p>
+
+  <label for="iscore">Ponctuation: </label><input type="number" name="score" id="iscore"required min="1"max="10"step="1"value="1">
+  
+</p>
+  
+  <p>
+
+  <label for="imonth">Month: </label><input type="month" name="month" id="imonth"required value="2023-08" >
+  
+</p>
+  
+  
+  <p>
+
+    <label for="iday">Day: </label><input type="date" name="day" id="iday"value="2023-04-05">
+  
+  </p>
+  
+  
+  <p>
+
+    <label for="ihour">Hour: </label><input type="time" name="hour" id="ihour"value="22:44:21">
+  
+  </p>
+  
+  
+  <p>
+
+
+  
+ 
+  
+  <label for="imale">Male: </label><input type="radio" name="male" id="imale"checked>
+
+  <label for="ifemale">Female: </label><input type="radio" name="" id="ifemale">
+
+
+
+</p>
+
+
+<p>
+
+
+<label for="iyoung">Young: up to 29</label><input type="radio" name="young" id="iyoung">
+
+  <label for="iadult">Adult: 30 up to 59</label><input type="radio" name="adult" id="iadult">
+
+<label for="isenior">senior: 60 or plus</label><input type="radio" name="senior" id="isenior"checked>
+
+
+
+
+
+</p>
+
+
+<p>
+
+<label for="">Color: </label>
+<input type="color" name="color" id="icolor">
+
+<label for="irange">Satisfaction Level</label>
+<input type="range" name="range" id="irange">
+
+<label for="ifile">Profile Picture: </label>
+<input type="file" name="file" id="ifile">
+
+</p>
+  
+  
+  <p>
+
+  <h4>Clothing: </h4>
+
+
+
+<label for="ijacket">Jacket: </label><input type="checkbox" name="jacket" id="ijacket">
+
+<label for="isuit">suit: </label><input type="checkbox" name="suit" id="isuit">
+
+<label for="ivest">Vest: </label><input type="checkbox" name="vest" id="ivest"checked>
+  </p>
+  
+  
+  
+  <p>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clean">
+  </p>
+  
+  
+  </form>
+</div>
+
+
+</body>
+</html>
