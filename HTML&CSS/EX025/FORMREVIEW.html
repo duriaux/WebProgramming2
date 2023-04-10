@@ -21,7 +21,7 @@ font-family: 'Orbitron', sans-serif;
 }
 
   #container{
-  background-color: rgb(228, 19, 19);
+  background-color: rgb(77, 40, 40);
   }
   
   form{
@@ -32,8 +32,8 @@ font-family: 'Orbitron', sans-serif;
   
   p{
   
-  padding: 10px;
-  font-size:1.5em;
+  padding: 15px;
+  font-size:2em;
   
   
   }
@@ -171,14 +171,66 @@ font-family: 'Orbitron', sans-serif;
 
 <label for="ivest">Vest: </label><input type="checkbox" name="vest" id="ivest"checked>
   </p>
+
+
+<fieldset>
+
+<legend>Clothing</legend>
+
+  <p>
   
+  <label for="ilongSleeve">Long Sleeve Clothes</label>
+  <select name="longSleeve" id="iLongSleeve">
+  
+    <option value="choose"> --Pick Up--</option>
+  <optgroup>
+    <option value="suit"selected>Suit</option>
+    <option value="coat">Coat</option>
+    <option value="jacket">Jacket</option>
+    <option value="sweater">Sweater</option>
+  </optgroup>
+  
+  </select>
+  
+  
+  </p>
   
   
   <p>
-    <input type="submit" value="Send">
-    <input type="reset" value="Clean">
-  </p>
+
+<label for="iunderwear">Underwear: </label>
+<input type="text" name="" id=""list="iunderwear">
+<datalist id="iunderwear">  
+ <option>Panties</option> 
+ <option>underpants</option> 
+ <option>bra</option> 
+ <option>nightdress</option> 
+
+</datalist>
+
+</p>
   
+  
+  
+<p>
+
+<label for="iarea">Text Area:</label>
+<br>
+<textarea name="area" id="iarea" cols="30" rows="10"></textarea>
+
+
+  </p>
+
+
+</fieldset>
+
+
+<p>
+
+  <input type="submit" value="Send">
+  <input type="reset" value="Clean">
+
+</p>
   
   </form>
 </div>

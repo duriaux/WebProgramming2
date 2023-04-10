@@ -5,11 +5,173 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Output Element</title>
+
+<!--
+output element does not have the function of adding values & then sending them; it adds values & shows on the screen.
+
+
+output element needs an identification(id), as well as a content, so that it can make connection with input element.
+
+
+id: each id can contain the value received per input element. to extract this id value you need to call .value(idvalue.value)
+
+
+-->
+
 </head>
 <body>
   
-<form action=""></form>
+<form action="register.js"method="post"autocomplete="on">
+<fieldset>
+
+  <legend>Sum</legend>
+  
+  <p>
+  
+  <label for="in1">Number 1: </label>
+  <input type="number" name="n1" id="in1"min="0"max="50"required oninput="isum.innerHTML = Number(in1.value) + Number(in2.value)">
+  
+  </p>
+  
+  
+  <p>
+    
+    <label for="in2">Number 2:</label>
+    <input type="number" name="n2" id="in2"min="0"max="50"required oninput="isum.innerHTML = Number(in1.value) + Number(in2.value)">
+  
+  </p>
+  
+  
+  <p>
+  
+  <label for="isum">Sum: </label>
+  <output name="sum"id="isum">0</output>
+  
+  </p>
+</fieldset>
 
 
+<fieldset>
+
+
+  <legend>Range</legend>
+  <p>
+  
+  <label for="irange">Number: </label>
+  <input type="range" name="range" id="irange"min="0"max="100"value="50"oninput=" igraduate.innerHTML = Number(irange.value)">
+  
+  <output id="igraduate">50</output>
+  
+  
+  </p>
+
+</fieldset>
+
+
+
+<fieldset>
+
+  <legend>Year</legend>
+
+  <p>
+  
+  <label for="iyear">what year were you born?</label>
+  <input type="number" name="year" id="iyear"min="1900"max="2020" oninput="calcAge()">
+
+<label for="iage"> Your age is:</label>
+  <output id="iage">0</output>
+  
+  </p>
+
+</fieldset>
+
+
+  
+
+
+
+  <fieldset>
+
+<legend>Sum2</legend>
+
+    <p><label for="in11">Num:</label><input type="number"id="in11"min="0"max="100"required oninput="sumIds()"></p>
+
+
+
+    <p><label for="in22">Num:</label><input type="number" id="in22"min="0"max="100"required oninput="sumIds()"></p>
+
+
+    <p><label for="in33">Num:</label><input type="number" id="in33"min="0"max="100"required oninput="sumIds()"></p>
+    
+    
+    
+    <p><label for="isum55">add:</label>
+      <output id="isum55">0</output></p>
+
+    </fieldset>
+      
+     <fieldset>
+      <legend>Range2</legend>
+      <p><label for="idegree77">Degree of Saturation:</label><input type="range"value="40"id="idegree77"min="0"max="100"
+      oninput="irange77.innerHTML=Number(idegree77.value)">
+    
+      <output id="irange77">50</output>
+    </p>
+
+  </fieldset> 
+     
+
+    <fieldset>
+    <legend>Year2</legend>
+
+<p>
+<label for="iay">What Year Were You Born? </label>
+<input type="number"id="iay"oninput="calcAge()">
+<label for="">So, Your age is:</label>
+<output id="iag">0</output>
+</p>
+
+
+
+
+  </fieldset>
+    
+
+
+
+
+<p>
+  <input type="submit" value="Send">
+  <input type="reset" value="Clean">
+</p>
+
+
+
+
+
+
+</form>
+
+<script>
+
+
+function sumIds(){
+//output element => id= isum
+isum55.innerHTML = Number(in11.value) + Number(in22.value) + Number(in33.value);
+
+
+}
+
+
+
+function calcAge(){
+
+iag.innerHTML = Number(new Date().getFullYear()) - Number(iay.value);
+
+}
+
+
+
+</script>
 </body>
 </html>
