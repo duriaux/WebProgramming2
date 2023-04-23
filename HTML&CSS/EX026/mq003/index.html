@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+
+<!--media = all => the styling will work for any device(laptop, computer, cell).
+
+
+Media Queries = Media type + Media feature
+    
+    feature = characteristic of Media, e.i, characteristic of screen
+
+    type media = screen and...
+    feature media: (orientation: portrait)
+    
+    type media = screen and...
+    feature media = (orientation: landscape)
+
+    CSS link for screen => media attribute receives screen value
+  
+  DIFFERENT LINKS //DIFFERENT FILES FOR DIFFERENT MEDIAS 
+
+
+
+-->
+
+<style>
+
+ @media all{
+
+ /*general statement*/
+  
+ /*@charset "UTF-8";*/
+
+/* general settings or generic settings(standing - device//portrait- & lying - device//landscape)*/
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    }
+    html,body{
+
+    width:100vw;
+    height:100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    }
+
+    h1{
+
+    color: white;
+    text-shadow:3px 3px 0px #1526a7;
+    padding:10px;
+
+    }
+
+
+
+ }
+
+   /*portrait statement*/
+
+@media screen and (orientation: portrait){
+
+/*standing device(portrait)*/
+
+body{
+
+background-image:url('../img/cev-portrait.jpg');
+
+background-position: center bottom;
+
+}
+
+}
+
+
+    /*landscape statement*/
+
+@media screen and (orientation: landscape){
+
+ 
+
+/*lying device(landscape)*/
+
+body{
+
+
+background-image: url('../img/cev-landscape.jpg');
+background-position: center bottom;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+ <h1>Change the Orientation of Your Device</h1> 
+</body>
+</html>
