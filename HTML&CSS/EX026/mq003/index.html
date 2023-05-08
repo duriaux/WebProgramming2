@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Media Queries</title>
+  <title>Mia Queries</title>
+  <link rel="stylesheet" href="style/mediaquery.css">
 
 <!--media = all => the styling will work for any device(laptop, computer, cell).
 
@@ -27,96 +28,7 @@ Media Queries = Media type + Media feature
 
 -->
 
-<style>
 
- @media all{
-
- /*general statement*/
-  
- /*@charset "UTF-8";*/
-
-/* general settings or generic settings(standing - device//portrait- & lying - device//landscape)*/
-*{
-    margin: 0;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-
-    }
-    html,body{
-
-    width:100vw;
-    height:100vh;
-    background-color: #233eff;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-
-    }
-
-    h1{
-
-    color: white;
-    text-shadow:3px 3px 0px #1526a7;
-    padding:10px;
-
-    }
-
-
-
- }
-
-   /*portrait statement*/
-
-@media screen and (orientation: portrait){
-
-/*standing device(portrait)*/
-
-body{
-
-background-image:url('../img/cev-portrait.jpg');
-
-background-position: center bottom;
-
-}
-
-}
-
-
-    /*landscape statement*/
-
-@media screen and (orientation: landscape){
-
- 
-
-/*lying device(landscape)*/
-
-body{
-
-
-background-image: url('../img/cev-landscape.jpg');
-background-position: center bottom;
-
-
-}
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</style>
 
 
 
